@@ -1,11 +1,9 @@
 import './globals.css'
-import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
+import LayoutClient from './layout-client'
+import { metadata } from './metadata'
 
-export const metadata: Metadata = {
-  title: 'Zakaria Sisalem - Portfolio',
-  description: 'Full-Stack Developer and Machine Learning Engineer',
-}
+export { metadata }
 
 export default function RootLayout({
   children,
@@ -16,7 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navigation />
-        {children}
+        <LayoutClient>{children}</LayoutClient>
       </body>
     </html>
   )
