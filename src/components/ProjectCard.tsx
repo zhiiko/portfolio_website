@@ -56,7 +56,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index = 0 }) => {
         
         {/* Technology tags - revised to match the image */}
         <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6">
-          {project.technologies.slice(0, 3).map((tech, i) => (
+          {project.technologies.slice(0, 3).map((tech) => (
             <span
               key={tech}
               className="text-sm text-primary-400"
