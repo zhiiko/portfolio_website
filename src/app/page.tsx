@@ -136,7 +136,7 @@ export default function Home() {
                             y: [0, -10, 0],
                           }}
                           transition={{
-                            duration: 3 + index,
+                            duration: 3,
                             repeat: Infinity,
                             ease: "easeInOut",
                             delay: index * 0.3,
@@ -168,7 +168,14 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1, duration: 0.5 }}
               >
-                <p className="text-foreground/70 mb-4 font-medium">Connect with me</p>
+                <motion.p 
+                  className="text-foreground/70 mb-4 font-medium"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.1, duration: 0.5 }}
+                >
+                  Connect with me
+                </motion.p>
                 <div className="flex space-x-6">
                   {socialLinks.map(({ name, icon: Icon, url }, index) => (
                     <motion.a
@@ -180,10 +187,22 @@ export default function Home() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 1.1 + index * 0.1, duration: 0.3 }}
+                      whileHover={{ y: -3, transition: { duration: 0.2 } }}
                     >
-                      <div className="p-3 rounded-full bg-primary-500/10 text-primary-500 hover:bg-primary-500/20 transition-colors duration-300">
+                      <motion.div 
+                        className="p-3 rounded-full bg-primary-500/10 text-primary-500 hover:bg-primary-500/20 transition-colors duration-300"
+                        animate={{
+                          y: [0, -5, 0],
+                        }}
+                        transition={{
+                          duration: 3,
+                          repeat: Infinity,
+                          ease: "easeInOut",
+                          delay: index * 0.3,
+                        }}
+                      >
                         <Icon className="w-5 h-5" />
-                      </div>
+                      </motion.div>
                       <span className="mt-2 text-xs text-foreground/70 group-hover:text-primary-500 transition-colors duration-300">{name}</span>
                     </motion.a>
                   ))}

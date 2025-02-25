@@ -45,6 +45,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index = 0 }) => {
             <span className={`inline-block px-2 py-1 text-xs font-semibold rounded-full ${
               project.category === "Machine Learning" 
                 ? "bg-secondary-500/20 text-secondary-500" 
+                : project.category === "Systems Programming"
+                  ? "bg-orange-500/20 text-orange-500"
                 : "bg-accent-500/20 text-accent-500"
             }`}>
               {project.category}
