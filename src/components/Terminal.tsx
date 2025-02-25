@@ -45,7 +45,7 @@ export const Terminal: React.FC<TerminalProps> = ({ onComplete }) => {
     setComplete
   } = useTerminalState();
 
-  // On mount, if there’s no prior text and we haven’t completed loading, show the load prompt.
+  // On mount, if there's no prior text and we haven't completed loading, show the load prompt.
   useEffect(() => {
     if (lines.length === 0 && !isComplete && !hasCalledPrompt) {
       clearLines();
@@ -78,7 +78,7 @@ export const Terminal: React.FC<TerminalProps> = ({ onComplete }) => {
         const progress = Math.round(((i + 1) / INTRO_SEQUENCE.length) * 90);
         setLoadingProgress(progress);
       }
-    } catch (error) {
+    } catch {
       addLine("Error during loading. Please try again.");
       setLoading(false);
       return;

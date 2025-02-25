@@ -2,9 +2,8 @@
 'use client'
 
 import { Project } from '@/data/projects'
-import { ArrowLeft, Github, ExternalLink } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 
 interface ProjectDetailProps {
   project: Project

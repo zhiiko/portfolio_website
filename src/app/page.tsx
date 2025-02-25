@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Terminal from '@/components/Terminal'
 import { Code, Brain, User, Github, Linkedin, Mail, ExternalLink } from 'lucide-react'
 import Link from 'next/link'
@@ -197,8 +197,12 @@ export default function Home() {
   )
 }
 
-// Import this at the top of the file
-function ArrowRight(props: any) {
+interface ArrowRightProps extends React.SVGProps<SVGSVGElement> {
+  size?: number;
+}
+
+function ArrowRight(props: ArrowRightProps) {
+  const { size, ...rest } = props;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +212,9 @@ function ArrowRight(props: any) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      {...props}
+      width={size}
+      height={size}
+      {...rest}
     >
       <path d="M5 12h14" />
       <path d="m12 5 7 7-7 7" />

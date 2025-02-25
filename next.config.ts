@@ -6,9 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // Disable server components for static export
+  // Experimental features removed since they're not recognized
   experimental: {
-    serverComponentsExternalPackages: [],
   },
 };
 

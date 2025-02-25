@@ -10,7 +10,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
+// In Next.js 15, params are passed as a Promise
+export default async function ProjectPage(props: { params: Promise<{ id: string }> }) {
+  // Use await to resolve the params Promise
+  const { id } = await props.params;
+  
   // Pass the project ID to the client component
-  return <ProjectClientPage id={params.id} />;
+  return <ProjectClientPage id={id} />;
 }

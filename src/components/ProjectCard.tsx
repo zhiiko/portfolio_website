@@ -4,7 +4,6 @@ import { Project } from '@/data/projects'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
-import Link from 'next/link'
 
 interface ProjectCardProps {
   project: Project;

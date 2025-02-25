@@ -35,14 +35,14 @@ export default function About() {
               transition={{ delay: 0.2, duration: 0.5 }}
             >
               <p className="mb-6 text-lg leading-relaxed">
-                I'm a Computer Science and Mathematics student at The University of Texas at Austin, 
+                I&apos;m a Computer Science and Mathematics student at The University of Texas at Austin, 
                 passionate about solving complex problems at the intersection of technology and innovation. 
                 With experience in both full-stack development and machine learning, I bring a unique 
                 perspective to software engineering challenges.
               </p>
               <p className="mb-6 text-lg leading-relaxed">
-                During my internships at companies like Vantashala and Vatson, I've had the opportunity 
-                to work on impactful projects that improved system performance and user experience. I'm 
+                During my internships at companies like Vantashala and Vatson, I&apos;ve had the opportunity 
+                to work on impactful projects that improved system performance and user experience. I&apos;m 
                 particularly interested in distributed systems, machine learning applications, and building 
                 scalable web applications.
               </p>
@@ -54,10 +54,10 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              <h2 className="text-2xl font-heading font-semibold mb-4">What I'm Looking For</h2>
+              <h2 className="text-2xl font-heading font-semibold mb-4">What I&apos;m Looking For</h2>
               <p className="text-lg leading-relaxed">
-                I'm seeking opportunities where I can apply my dual background in Computer Science 
-                and Mathematics to solve challenging problems. I'm particularly interested in roles 
+                I&apos;m seeking opportunities where I can apply my dual background in Computer Science 
+                and Mathematics to solve challenging problems. I&apos;m particularly interested in roles 
                 that involve machine learning, distributed systems, or full-stack development, where 
                 I can continue to grow while making meaningful contributions to innovative projects.
               </p>
