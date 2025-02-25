@@ -17,4 +17,4 @@ export default async function ProjectPage(props: { params: Promise<{ id: string 
   
   // Pass the project ID to the client component
   return <ProjectClientPage id={id} />;
-}
+} 
