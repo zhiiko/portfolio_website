@@ -8,9 +8,9 @@ export default function About() {
     <PageTransition>
       <div className="min-h-screen relative overflow-hidden">
         {/* Subtle background elements */}
-        <div className="absolute inset-0 bg-gradient-to-b from-dark-300/30 to-background z-0" />
-        <div className="absolute top-40 right-20 w-64 h-64 bg-primary-500/5 rounded-full filter blur-3xl" />
-        <div className="absolute bottom-20 left-20 w-64 h-64 bg-secondary-500/5 rounded-full filter blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-b from-light-gradient-1 to-background dark:from-dark-300/30 dark:to-background z-0" />
+        <div className="absolute top-40 right-20 w-64 h-64 bg-primary-500/10 rounded-full filter blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-64 h-64 bg-secondary-500/10 rounded-full filter blur-3xl" />
         
         <div className="relative z-10 container mx-auto py-24 px-4 sm:px-6 lg:px-8">
           <motion.div 

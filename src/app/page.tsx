@@ -48,7 +48,7 @@ export default function Home() {
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/zhiiko',
     },
     {
       name: 'LinkedIn',
@@ -66,7 +66,7 @@ export default function Home() {
     <PageTransition>
       <div className="min-h-screen relative overflow-hidden">
         {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-dark-300/50 via-dark-400/50 to-dark-500/70 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-br from-light-gradient-1 via-light-gradient-2 to-light-gradient-3 dark:from-dark-300/50 dark:via-dark-400/50 dark:to-dark-500/70 z-0" />
         
         {/* Animated background circles/blobs */}
         <div className="absolute top-20 left-10 w-96 h-96 bg-primary-500/20 rounded-full filter blur-3xl animate-pulse" />
