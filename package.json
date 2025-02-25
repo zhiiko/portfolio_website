@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://zhiiko.github.io/portfolio_website",
-  git add package.json
-  git commit -m "Added homepage field for GitHub Pages deployment"
-  git push origin main
+
   
   "scripts": {
     "dev": "next dev --turbopack",
